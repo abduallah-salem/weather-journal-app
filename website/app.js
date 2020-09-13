@@ -40,7 +40,7 @@ const validateZip = async (zipCode) => {
         return alertMain('Please enter a valid US zip code');
     }
     //Start fetch
-    const request = await fetch(`http://api.zippopotam.us/us/${zipCode}`);
+    const request = await fetch(`https://api.zippopotam.us/us/${zipCode}`);
     try {
         /*check the returned status code
             - Valid -> return zipCode.
